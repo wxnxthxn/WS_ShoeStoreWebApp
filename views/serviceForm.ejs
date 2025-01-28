@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Sneaker for A style</title>
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: right;
+        }
+
+        .navbar-brand {
+            font-size: 32px;
+            font-family: monospace;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            margin-right: auto;
+            /* ย้ายข้อความไปทางขวาและชิดซ้ายของแถบ */
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left {
+            margin-right: auto;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            font-family: monospace;
+            text-decoration: none;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-details {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .search-container {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 6px;
+            border: none;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 6px 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-details {
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .custom-button {
+            font-size: 24px;
+            font-family: monospace, sans-serif;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 25px 50px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .gray-container {
+            background-color: #bbb0b0;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar-nav">
+                <div class="navbar-left">
+                    <a class="navbar-brand" href="http://localhost:3000/">Sneaker for A style</a>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="http://localhost:3000/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/customer_auth/productsForm">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <div class="search-container">
+                    <form action="/search">
+                        <input type="text" placeholder="Search..." name="q">
+                        <button type="submit">
+                            <span class="fas fa-search"></span>
+                        </button>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="gray-container">
+        <p>คำว่า “วัยรุ่นทรงเอ” กลายเป็นคำยอดฮิตในโลกออนไลน์ในช่วงปีที่ผ่านมา ในแง่หนึ่ง
+            วัยรุ่นทรงเอคือสไตล์การแต่งตัวของวัยรุ่นไทยกลุ่มหนึ่ง ที่ไม่ได้แตกต่างจากการแต่งตัวสไตล์ฮิปฮอป ฮิปส์เตอร์
+            หรือสไตล์อื่น ๆ ทว่ากลุ่มคนที่นิยมชมชอบการแต่งตัวสไตล์วัยรุ่นทรงเอ กลับถูกวิพากษ์วิจารณ์ ล้อเลียน
+            และกลายเป็นตัวตลกของคนในโซเชียลมีเดีย คล้ายกับว่าวัยรุ่นทรงเอจะกลายเป็น “คำเหยียด” ไปเสียแล้ว </p>
+    </div>
+    <main>
+        <div class="product-details left">
+            <h1>Air Jordan 1 Low</h1>
+            <p style="text-align: center;">  Color: Shadow Brown/Sail/Brown Kelp<br><br>
+                <a href="http://localhost:3000/productsForm"><img
+                        src="https://jdsports.ca/cdn/shop/files/DC0774-200_jordan_women_s_1_low_shadow_brown__brown_kelp___sail_1_671x.jpg?v=1691166208"
+                        alt="Image Description"></a><br><br>
+                <button class="custom-button">BUY NOW</button>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Service options: In-store shopping · In-store pick-up · Phone: 082 716 6848</p>
+        <p>105 Long Had Bangsaen Rd, Saen Suk, Chon Buri District, Chon Buri 20130  </p>
+        &copy; 2099 Sneaker for A style
+    </footer>
+</body>
+
+</html>
